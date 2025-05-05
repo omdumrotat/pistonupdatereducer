@@ -1,0 +1,28 @@
+name: pistonupdatereducer
+version: '1.5'
+main: com.omdmrotat.pistonupdatereducer.PistonUpdateReducer
+api-version: '1.20'
+load: STARTUP
+description: Attempts to reduce block updates caused by pistons for configured blocks. Warning: May break redstone!
+# The author(s) of the plugin
+authors: omdmrotat
+
+# Optional: Website for the plugin
+website: freches.neocities.org
+
+# --- Commands ---
+commands:
+  pistonupdatereducer: # Base command name (can be shortened, e.g., 'pur')
+    description: Main command for PistonUpdateReducer.
+    aliases: [pur] # Optional shorter alias
+    usage: /<command> [reload]
+    permission: pistonupdatereducer.command.base # Basic permission to use the command itself
+
+# --- Permissions ---
+permissions:
+  pistonupdatereducer.command.base:
+    description: Allows basic usage of the /pur command.
+    default: op # Default to OP only
+  pistonupdatereducer.command.reload:
+    description: Allows usage of the /pur reload command.
+    default: op # Default to OP only
