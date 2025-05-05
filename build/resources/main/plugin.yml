@@ -3,7 +3,7 @@ version: '1.5'
 main: com.omdmrotat.pistonupdatereducer.PistonUpdateReducer
 api-version: '1.20'
 load: STARTUP
-description: Attempts to reduce block updates caused by pistons for configured blocks. Warning: May break redstone!
+description: 'Attempts to reduce block updates caused by pistons for configured blocks. Warning: May break redstone!'
 # The author(s) of the plugin
 authors: omdmrotat
 
